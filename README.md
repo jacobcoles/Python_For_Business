@@ -3,7 +3,7 @@
 Northbridge Business Services is a fictional company and all of its data is synthetic, in EUR. The `case_pack`
 folder holds the shared Northbridge data, templates and background documents used in every session.
 
-## Course setup (once, before Day 1: organiser or participant)
+## Course setup
 Unzip the course download to a **local** folder such as `C:\Course`. Avoid OneDrive, SharePoint or Teams-synced
 folders: syncing can lock files while scripts write to them. When Windows **Extract All** suggests a folder name,
 check you don't end up with a folder inside a folder of the same name. The **course folder** is the one that
