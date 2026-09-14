@@ -1,0 +1,21 @@
+{
+  "reporting_period": "2026-01",
+  "prior_period": "2025-12",
+  "transaction_files": [
+    "transactions/transactions_2026-01_N01.csv",
+    "transactions/transactions_2026-01_N02.csv",
+    "transactions/transactions_2026-01_N03.csv"
+  ],
+  "prior_period_transaction_files": [
+    "transactions/transactions_2025-12_N01.csv",
+    "transactions/transactions_2025-12_N02.csv",
+    "transactions/transactions_2025-12_N03.csv"
+  ],
+  "reference_files": [
+    "account_mapping.csv",
+    "entities.csv",
+    "budget.csv",
+    "source_controls.csv",
+    "expected_files.csv"
+  ]
+}

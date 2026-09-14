@@ -1,0 +1,9 @@
+transaction_id,period,entity,account_code,amount,currency,status
+T001,2025-12,N01,0400,1000.00,EUR,posted
+T002,2025-12,N01,0410,500.00,EUR,posted
+T003,2025-12,N01,0400,-100.00,EUR,posted
+T004,2025-12,N01,0500,-400.00,EUR,posted
+T005,2025-12,N01,0500,-200.00,EUR,posted
+T006,2025-12,N01,0500,20.00,EUR,posted
+T007,2025-12,N01,0600,-100.00,EUR,posted
+T008,2025-12,N01,0400,999.00,EUR,cancelled

@@ -1,0 +1,4 @@
+scenario_id,revenue_multiplier,direct_cost_multiplier,overhead_multiplier
+baseline,1.00,1.00,1.00
+growth,1.10,1.08,1.00
+cost_pressure,1.00,1.12,1.05

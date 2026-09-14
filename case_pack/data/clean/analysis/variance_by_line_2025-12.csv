@@ -1,0 +1,10 @@
+period,entity,entity_name,report_line,actual_amount,budget_amount,favourable_variance
+2025-12,N01,Northbridge Support Services,revenue,68197.95,68600.00,-402.05
+2025-12,N01,Northbridge Support Services,direct_cost,-28059.68,-29350.00,1290.32
+2025-12,N01,Northbridge Support Services,overhead,-10275.77,-10500.00,224.23
+2025-12,N02,Northbridge Training Services,revenue,50612.03,53200.00,-2587.97
+2025-12,N02,Northbridge Training Services,direct_cost,-19556.86,-20500.00,943.14
+2025-12,N02,Northbridge Training Services,overhead,-7610.34,-8150.00,539.66
+2025-12,N03,Northbridge Advisory Services,revenue,38117.91,38100.00,17.91
+2025-12,N03,Northbridge Advisory Services,direct_cost,-17554.80,-17100.00,-454.80
+2025-12,N03,Northbridge Advisory Services,overhead,-6539.58,-6700.00,160.42

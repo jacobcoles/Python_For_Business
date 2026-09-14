@@ -1,0 +1,10 @@
+period,entity,report_line,actual_amount
+2026-01,N01,revenue,66370.13
+2026-01,N01,direct_cost,-28016.90
+2026-01,N01,overhead,-10287.47
+2026-01,N02,revenue,50092.36
+2026-01,N02,direct_cost,-18603.20
+2026-01,N02,overhead,-7736.11
+2026-01,N03,revenue,36997.59
+2026-01,N03,direct_cost,-17438.05
+2026-01,N03,overhead,-6465.19

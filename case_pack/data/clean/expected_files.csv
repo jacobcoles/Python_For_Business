@@ -1,0 +1,13 @@
+period,entity,filename
+2025-10,N01,transactions_2025-10_N01.csv
+2025-10,N02,transactions_2025-10_N02.csv
+2025-10,N03,transactions_2025-10_N03.csv
+2025-11,N01,transactions_2025-11_N01.csv
+2025-11,N02,transactions_2025-11_N02.csv
+2025-11,N03,transactions_2025-11_N03.csv
+2025-12,N01,transactions_2025-12_N01.csv
+2025-12,N02,transactions_2025-12_N02.csv
+2025-12,N03,transactions_2025-12_N03.csv
+2026-01,N01,transactions_2026-01_N01.csv
+2026-01,N02,transactions_2026-01_N02.csv
+2026-01,N03,transactions_2026-01_N03.csv

@@ -1,0 +1,10 @@
+period,entity,report_line,actual_amount
+2025-11,N01,revenue,400.00
+2025-11,N01,direct_cost,-400.00
+2025-11,N02,revenue,5000.00
+2025-11,N02,direct_cost,-5000.00
+2025-11,N03,revenue,0.00
+2025-11,N03,direct_cost,0.00
+2025-11,N03,overhead,-800.00
+2025-11,N01,overhead,-1000.00
+2025-11,N02,overhead,-1000.00

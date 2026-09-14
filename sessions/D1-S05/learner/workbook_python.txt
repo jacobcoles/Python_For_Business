@@ -1,0 +1,17 @@
+# Python in Excel code: enter each block in its own Python cell (Formulas > Insert Python), not in VS Code.
+# First Python cell (for example A1). Set the output to Excel values.
+import pandas as pd
+lines = xl("NorthbridgeLines[#All]", headers=True)
+unit_result = lines.groupby("entity", as_index=False)["actual_amount"].sum()
+unit_result = unit_result.rename(columns={"actual_amount": "operating_result"})
+unit_result
+
+# Second Python cell: put it below the first result (for example A6). The output is a chart.
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.bar(unit_result["entity"], unit_result["operating_result"])
+ax.set(title="Northbridge December operating result", ylabel="EUR, signed")
+fig
+
+# Then: predict the effect of adding EUR 100 to one input amount, make the change in your saved
+# copy, and check the table and chart. Restore the original amount afterwards.

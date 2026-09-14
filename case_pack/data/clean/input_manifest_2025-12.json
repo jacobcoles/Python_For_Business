@@ -1,0 +1,19 @@
+{
+  "pack_version": "v0.1-draft",
+  "reporting_period": "2025-12",
+  "prior_period": "2025-11",
+  "note": "Load exactly these files for this reporting period. The transactions folder deliberately also contains earlier periods; a directory glob would pull them in and inflate every total.",
+  "transaction_files": [
+    "transactions/transactions_2025-12_N01.csv",
+    "transactions/transactions_2025-12_N02.csv",
+    "transactions/transactions_2025-12_N03.csv"
+  ],
+  "prior_period_actuals": "checkpoints/actuals_by_line_2025-11.csv",
+  "reference_files": [
+    "account_mapping.csv",
+    "entities.csv",
+    "budget.csv",
+    "source_controls.csv",
+    "expected_files.csv"
+  ]
+}
