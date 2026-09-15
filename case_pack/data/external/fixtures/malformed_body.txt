@@ -1,0 +1,29 @@
+MOCK RESPONSE - NOT A LIVE-SOURCE TEST.
+Serve the bytes BELOW THE MARKER LINE with HTTP status 200 and
+Content-Type: application/vnd.sdmx.data+json; charset=utf-8; version=2
+
+What it simulates: a response that claims to be SDMX-JSON, passes the status check and
+passes the Content-Type check, and then fails at json.loads(). This is why a refresh needs a
+third guard - a parse attempt inside try/except - and not just status + content type.
+
+Expected handling in D2-S03: catch json.JSONDecodeError, report refresh status "unavailable
+(malformed response)", and do NOT overwrite a good cache with these bytes.
+
+Nothing below was returned by the OECD. The opening fragment is copied from the shape of the
+real snapshot so that the truncation looks realistic; it is then cut off mid-structure.
+--------------------------------- BODY STARTS BELOW ---------------------------------
+{
+  "meta": {
+    "schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/master/data-message/tools/schemas/2.0.0/sdmx-json-data-schema.json",
+    "id": "MOCK-MALFORMED-FIXTURE",
+    "prepared": "2026-09-13T18:00:00Z",
+    "test": true
+  },
+  "data": {
+    "dataSets": [
+      {
+        "structure": 0,
+        "action": "Information",
+        "observations": {
+          "0:0:0:0:0:0:0:0:0": [2.0, 0, 0],
+          "0:0:0:0:0:0:0:0:1": [1.7, 0

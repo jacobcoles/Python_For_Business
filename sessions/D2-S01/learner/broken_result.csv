@@ -1,0 +1,2 @@
+period,entity,reported_operating_result,how_it_was_produced
+2025-12,N02,21754.26,"Spreadsheet: account codes looked up in account_mapping.csv; rows whose code was not found were left out"

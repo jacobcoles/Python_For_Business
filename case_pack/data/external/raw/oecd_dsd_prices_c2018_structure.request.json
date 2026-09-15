@@ -1,0 +1,13 @@
+{
+  "url": "https://sdmx.oecd.org/public/rest/dataflow/OECD.SDD.TPS/DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL/1.0?references=all",
+  "http_method": "GET",
+  "request_headers_sent": {
+    "Accept": "application/vnd.sdmx.structure+json; charset=utf-8; version=1.0"
+  },
+  "http_status": 200,
+  "response_content_type": "application/vnd.sdmx.structure+json; charset=utf-8; version=1.0",
+  "response_bytes": 612239,
+  "retrieved_at_utc": "2026-09-13T18:27:03Z",
+  "raw_body_file": "oecd_dsd_prices_c2018_structure.sdmx-structure.json",
+  "purpose": "Authoritative SDMX structure message: dataflow, data structure definition, concept schemes, code lists and content constraints. This is the source used to decode every dimension code and unit in oecd_context_tidy.csv. Captured once as provenance; fetch_oecd.py does not re-request it."
+}

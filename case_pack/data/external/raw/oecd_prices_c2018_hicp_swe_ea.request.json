@@ -1,0 +1,12 @@
+{
+  "url": "https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL,1.0/SWE+EA.M.HICP.CPI.PA._T.N.GY?startPeriod=2024-01&endPeriod=2026-01&dimensionAtObservation=AllDimensions",
+  "http_method": "GET",
+  "request_headers_sent": {
+    "Accept": "application/vnd.sdmx.data+json; charset=utf-8; version=2"
+  },
+  "http_status": 200,
+  "response_content_type": "application/vnd.sdmx.data+json; charset=utf-8; version=2",
+  "response_bytes": 27147,
+  "retrieved_at_utc": "2026-09-13T18:33:16Z",
+  "raw_body_file": "oecd_prices_c2018_hicp_swe_ea.sdmx.json"
+}

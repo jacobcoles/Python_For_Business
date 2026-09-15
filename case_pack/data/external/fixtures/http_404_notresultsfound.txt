@@ -1,0 +1,16 @@
+REAL RESPONSE - captured from the live OECD API on 2026-09-13, kept here as a failure fixture.
+
+This is the only "failure" fixture in this folder that is genuine. It is included because it is
+the most surprising one: the OECD error path does NOT return JSON.
+
+Request  : GET https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL,1.0/SWE.M.HICP.CPI.PA._T.N.NOT_A_CODE?startPeriod=2025-12&endPeriod=2025-12&dimensionAtObservation=AllDimensions
+Accept   : application/vnd.sdmx.data+json; charset=utf-8; version=2
+Status   : 404
+Content-Type : text/plain
+Bytes    : 14
+Retrieved: 2026-09-13T18:32:33Z (approx; same script run as the empty-result capture)
+
+Expected handling: the Content-Type check must fire before json.loads(). A learner who parses
+first gets json.JSONDecodeError on the string below and reports the wrong cause.
+--------------------------------- BODY STARTS BELOW ---------------------------------
+NoResultsFound

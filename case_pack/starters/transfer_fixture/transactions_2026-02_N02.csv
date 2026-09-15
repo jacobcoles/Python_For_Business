@@ -1,0 +1,3 @@
+transaction_id,period,entity,account_code,amount,currency,status
+T990201,2026-02,N02,0410,412.80,EUR,posted
+T990202,2026-02,N02,0500,-121.35,EUR,posted

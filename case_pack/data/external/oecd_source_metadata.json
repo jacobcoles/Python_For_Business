@@ -1,0 +1,246 @@
+{
+  "snapshot_name": "oecd_hicp_context_2024-01_2026-01",
+  "purpose": "External management context for Northbridge Business Services. Published inflation background only. This series is NOT a forecast input and must not be joined into the Northbridge planning model.",
+  "source": {
+    "source_name": "OECD Data Explorer / OECD public SDMX API",
+    "agency": "OECD",
+    "sdmx_agency_id": "OECD.SDD.TPS",
+    "sdmx_agency_meaning": "OECD Statistics and Data Directorate - Trade and Prices Statistics",
+    "originator_of_the_underlying_statistic": "Eurostat and the national statistical institutes. HICP is compiled by Statistics Sweden and Eurostat; the OECD redisseminates it. See notes[6].",
+    "api_base_url": "https://sdmx.oecd.org/public/rest",
+    "authentication_required": false,
+    "authentication_evidence": "OECD Terms & Conditions, section 3 'OECD Application Programming Interfaces (APIs)': 'When entering an API query, the OECD encourages, but does not require, you to register your details so that we can keep you informed of technical updates to the APIs.' No API key was sent; every request in this snapshot was unauthenticated and returned HTTP 200."
+  },
+  "dataflow": {
+    "dataflow_id": "DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL",
+    "dataflow_version": "1.0",
+    "dataflow_name": "Consumer price indices (CPIs,HICPs), COICOP 2018",
+    "data_structure_definition": "OECD.SDD.TPS:DSD_PRICES_COICOP2018(1.0)",
+    "structure_message_url": "https://sdmx.oecd.org/public/rest/dataflow/OECD.SDD.TPS/DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL/1.0?references=all",
+    "structure_message_file": "raw/oecd_dsd_prices_c2018_structure.sdmx-structure.json",
+    "dataflow_last_updated_marker_utc": "2026-09-11T03:51:59Z",
+    "dataflow_last_updated_marker_source": "contentConstraint CR_A_DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL, attribute validFrom, in the structure message retrieved 2026-09-13T18:27:03Z",
+    "dataflow_total_observation_count": 1943708,
+    "dataflow_total_observation_count_source": "contentConstraint annotation type 'sdmx_metrics' in the same structure message"
+  },
+  "query": {
+    "http_method": "GET",
+    "full_query_url": "https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL,1.0/SWE+EA.M.HICP.CPI.PA._T.N.GY?startPeriod=2024-01&endPeriod=2026-01&dimensionAtObservation=AllDimensions",
+    "request_headers_sent": {
+      "Accept": "application/vnd.sdmx.data+json; charset=utf-8; version=2"
+    },
+    "series_key_pattern": "SWE+EA.M.HICP.CPI.PA._T.N.GY",
+    "series_key_note": "The key is a dot-separated list of the 8 dimension values in DSD order. '+' inside one position means 'either of these'. This key therefore selects 2 series.",
+    "series_keys_returned": [
+      "SWE.M.HICP.CPI.PA._T.N.GY",
+      "EA.M.HICP.CPI.PA._T.N.GY"
+    ],
+    "response_format_requested": "SDMX-JSON 2.0 data message (via the Accept header, not a format= parameter)",
+    "dimension_at_observation": "AllDimensions",
+    "http_status": 200,
+    "response_content_type": "application/vnd.sdmx.data+json; charset=utf-8; version=2",
+    "response_bytes": 27147,
+    "raw_body_file": "raw/oecd_prices_c2018_hicp_swe_ea.sdmx.json",
+    "raw_body_sha256": "570e197210c304a433621cb934b3416fbd9cfd47841133741dfb555cd78775d0"
+  },
+  "dimension_filter": [
+    {
+      "position": 0,
+      "dimension_id": "REF_AREA",
+      "dimension_name": "Reference area",
+      "code_list": "OECD:CL_AREA(1.1)",
+      "values": [
+        {
+          "code": "SWE",
+          "decoded_meaning": "Sweden"
+        },
+        {
+          "code": "EA",
+          "decoded_meaning": "Euro area"
+        }
+      ],
+      "why": "Northbridge operates in Sweden and reports in EUR; the two areas give the local price environment and the reporting-currency-area price environment."
+    },
+    {
+      "position": 1,
+      "dimension_id": "FREQ",
+      "dimension_name": "Frequency of observation",
+      "code_list": "SDMX:CL_FREQ(2.1)",
+      "values": [
+        {
+          "code": "M",
+          "decoded_meaning": "Monthly"
+        }
+      ],
+      "why": "Matches the monthly grain of the Northbridge reporting period."
+    },
+    {
+      "position": 2,
+      "dimension_id": "METHODOLOGY",
+      "dimension_name": "Methodology",
+      "code_list": "OECD.SDD.TPS:CL_METHODOLOGY_PRI(1.0)",
+      "values": [
+        {
+          "code": "HICP",
+          "decoded_meaning": "Eurostat harmonised index of consumer prices (HICP)"
+        }
+      ],
+      "why": "HICP is compiled to one harmonised definition across countries, so Sweden and the euro area are comparable. The alternative code 'N' (National) returns the Swedish national CPI (KPI), which includes owner-occupier mortgage interest costs and is NOT comparable with the euro-area aggregate; see notes[3]."
+    },
+    {
+      "position": 3,
+      "dimension_id": "MEASURE",
+      "dimension_name": "Measure",
+      "code_list": "OECD.SDD.TPS:CL_MEASURE_PRI(1.0)",
+      "values": [
+        {
+          "code": "CPI",
+          "decoded_meaning": "Consumer price index"
+        }
+      ],
+      "why": "The price index itself, as opposed to code 'IT_W' (Item weights)."
+    },
+    {
+      "position": 4,
+      "dimension_id": "UNIT_MEASURE",
+      "dimension_name": "Unit of measure",
+      "code_list": "OECD:CL_UNIT_MEASURE(1.7)",
+      "values": [
+        {
+          "code": "PA",
+          "decoded_meaning": "Percent per annum"
+        }
+      ],
+      "why": "Selects the rate-of-change presentation rather than 'IX' (Index) levels."
+    },
+    {
+      "position": 5,
+      "dimension_id": "EXPENDITURE",
+      "dimension_name": "Expenditure",
+      "code_list": "OECD:CL_COICOP_18(1.1)",
+      "values": [
+        {
+          "code": "_T",
+          "decoded_meaning": "Total"
+        }
+      ],
+      "why": "All items - the headline basket, not a single COICOP division."
+    },
+    {
+      "position": 6,
+      "dimension_id": "ADJUSTMENT",
+      "dimension_name": "Adjustment",
+      "code_list": "OECD:CL_ADJUSTMENT(1.0)",
+      "values": [
+        {
+          "code": "N",
+          "decoded_meaning": "Neither seasonally adjusted nor calendar adjusted"
+        }
+      ],
+      "why": "Headline published inflation is not seasonally adjusted. The year-on-year transformation already removes most seasonality."
+    },
+    {
+      "position": 7,
+      "dimension_id": "TRANSFORMATION",
+      "dimension_name": "Transformation",
+      "code_list": "OECD:CL_TRANSFORMATION(1.0)",
+      "values": [
+        {
+          "code": "GY",
+          "decoded_meaning": "Growth rate, over 1 year"
+        }
+      ],
+      "why": "The year-on-year inflation rate a business audience recognises, rather than 'G1' (period on period) or 'GOY' (contribution to growth)."
+    }
+  ],
+  "dimension_decoding_source": "Every 'decoded_meaning' above was read from the official OECD structure message saved at raw/oecd_dsd_prices_c2018_structure.sdmx-structure.json (code lists CL_AREA, CL_FREQ, CL_METHODOLOGY_PRI, CL_MEASURE_PRI, CL_UNIT_MEASURE, CL_COICOP_18, CL_ADJUSTMENT, CL_TRANSFORMATION), and independently confirmed against the OECD's own labelled CSV export (format=csvfilewithlabels) of the same query. No meaning was inferred from the code string.",
+  "coverage": {
+    "period_range_requested": {
+      "startPeriod": "2024-01",
+      "endPeriod": "2026-01"
+    },
+    "period_range_returned": {
+      "min": "2024-01",
+      "max": "2026-01"
+    },
+    "requested_window_fully_covered": true,
+    "observation_count": 50,
+    "observations_per_series": 25,
+    "series_count": 2,
+    "period_format": "ISO YYYY-MM",
+    "frequency": "Monthly",
+    "unit_of_measure": "Percent per annum (year-on-year percentage change of the HICP all-items index)",
+    "unit_multiplier": "1 (UNIT_MULT absent; values are as published, e.g. 2.1 means 2.1%)",
+    "decimals_attribute": "DECIMALS = 2 ('Two') is attached by the OECD, but every value actually returned in this window carries one decimal place. Do not treat DECIMALS as a guarantee of precision.",
+    "obs_status_values_present": [
+      {
+        "code": "A",
+        "decoded_meaning": "Normal value"
+      }
+    ],
+    "missing_values_in_window": 0,
+    "latest_period_available_in_the_live_dataflow_at_retrieval": {
+      "EA": "2026-08",
+      "SWE": "2026-07",
+      "how_established": "Separate bounded probe request over startPeriod=2023-12&endPeriod=2026-12 on 2026-09-13; see work/evidence/P5_oecd_evidence.md. Publication lag differs by reference area."
+    }
+  },
+  "retrieval": {
+    "retrieved_at_utc": "2026-09-13T18:33:16Z",
+    "retrieved_at_utc_note": "This is the RETRIEVAL time. It is deliberately stored separately from 'period', which is the OBSERVATION month. A rerun tomorrow changes retrieved_at_utc and must not change period.",
+    "retrieved_by": "case_pack/data/external/fetch_oecd.py",
+    "server_prepared_timestamp_in_response": "2026-09-13T18:26:43Z",
+    "server_prepared_timestamp_note": "meta.prepared in the saved body is EARLIER than retrieved_at_utc. The run at 18:33:16Z received a body the OECD server had prepared at 18:26:43Z (message id IREF015549), byte-identical to the 18:26:42Z run. The OECD serves cached bodies. Client-side freshness must therefore be judged on your own retrieved_at_utc and on the dataflow validFrom marker, never on meta.prepared alone.",
+    "network": "Unauthenticated public internet from the course production machine."
+  },
+  "licence_and_reuse": {
+    "terms_page_title": "Terms & Conditions | OECD",
+    "terms_page_url": "https://www.oecd.org/en/about/terms-conditions.html",
+    "terms_last_updated_on_page": "1 July 2024",
+    "retrieved_date": "2026-09-13",
+    "retrieval_caveat": "www.oecd.org returned HTTP 403 to this machine (both WebFetch and curl). The terms text quoted below was read from the Internet Archive capture https://web.archive.org/web/20260913093745/https://www.oecd.org/en/about/terms-conditions.html, taken 2026-09-13. The canonical URL was confirmed as the 'Terms & conditions' link in the OECD Data Explorer page source (https://data-explorer.oecd.org/, retrieved 2026-09-13). Re-verify directly against www.oecd.org from a network that can reach it before release.",
+    "permitted_use_verbatim": "Except where additional restrictions apply as stated above, you can extract from, download, copy, adapt, print, distribute, share and embed Data for any purpose, even for commercial use. You must give appropriate credit to the OECD by using the citation associated with the relevant Data, or, if no specific citation is available, you must cite the source information using the following format: OECD (year), (dataset name),(data source) DOI or URL (accessed on (date)).",
+    "third_party_ownership_verbatim": "The OECD makes data (the “Data”) available for use and consultation by the public. Data may be subject to restrictions beyond the scope of these Terms and Conditions, either because specific terms apply to those Data or because third parties may have ownership interests. It is the user’s responsibility to verify, either directly in the metadata or, if available, by clicking on the icon and then referring to the \"source\" tab, whether the Data is fully or partially owned by third parties and/or whether additional restrictions may apply, and to contact the owner of the Data before incorporating it in your work in order to secure the necessary permissions.",
+    "third_party_ownership_applies_here": "Yes. The HICP is produced by Eurostat and the national statistical institutes, not by the OECD. Treat the OECD as the redisseminator. Eurostat's own reuse policy should be checked before any redistribution beyond this course.",
+    "availability_and_limits_verbatim": "The availability of the Data is contingent upon the availability of the OECD’s corresponding resources, whose capacity is subject to change at any time. The OECD may monitor your use of the Data and reserves the right, at its sole discretion and without limitation, to modify the amount of Data you may request in a single query, to modify the number of queries you may make over a specified time, to remove certain Data and to alter the file formats in which Data are available.",
+    "api_as_is_verbatim": "You may use one or more OECD-developed application programming interfaces (“APIs”) to facilitate access to the Data. APIs are made available on an “as-is” basis, and use of an API is at your own risk.",
+    "api_access_may_be_limited_verbatim": "The OECD reserves the right to limit or suspend any user’s IP address access to the APIs at any time and without notice for any reason...",
+    "published_numeric_rate_limit": null,
+    "published_numeric_rate_limit_note": "No numeric request quota is published in the Terms & Conditions. The OECD reserves the right to limit query size and query frequency at its discretion. Keep teaching queries small and infrequent; do not loop over countries in a classroom.",
+    "required_citation_for_this_pack": "OECD (2026), Consumer price indices (CPIs,HICPs), COICOP 2018, OECD Data Explorer, https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL,1.0/SWE+EA.M.HICP.CPI.PA._T.N.GY (accessed on 13 September 2026). Underlying statistic produced by Eurostat and the national statistical institutes."
+  },
+  "independent_cross_check": {
+    "performed_on": "2026-09-13",
+    "independent_source": "Eurostat dissemination API, dataset prc_hicp_minr, 'Harmonised index of consumer prices (HICP) - ECOICOP ver.2 - indices and rates of change, monthly data'",
+    "independent_source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&coicop18=TOTAL&unit=RCH_A&geo=SE&geo=EA&sinceTimePeriod=2024-01&untilTimePeriod=2026-01",
+    "independent_source_last_updated": "2026-09-01T23:00:00+0200",
+    "observations_compared": 50,
+    "observations_agreeing_exactly": 49,
+    "disagreements": [
+      {
+        "ref_area": "EA",
+        "period": "2025-08",
+        "oecd_value": 2.1,
+        "eurostat_value": 2.0,
+        "difference_pp": 0.1,
+        "assessment": "Unresolved vintage difference. Two separate Eurostat datasets (the live prc_hicp_minr and the archived prc_hicp_manr) both give 2.0, and the OECD's own COICOP 1999 dataflow DSD_PRICES@DF_PRICES_ALL also gives 2.0 for EA20 in 2025-08. Only the OECD COICOP 2018 dataflow gives 2.1. Most likely an unpropagated revision on the OECD side. It does not affect the periods the Northbridge case uses (2025-12 and 2026-01), which agree exactly."
+      }
+    ],
+    "what_this_proves": "The OECD redissemination faithfully reproduces the producer's published HICP figures in 49 of 50 observations.",
+    "what_this_does_not_prove": "Eurostat is the upstream producer of this statistic, so agreement confirms faithful redissemination; it is not an independent re-compilation of the index itself.",
+    "blocked_check": "An independent OECD-hosted human-readable presentation (the OECD 'Inflation (CPI)' indicator page or the Consumer Prices news release) could not be retrieved: www.oecd.org, www.oecd-ilibrary.org and one.oecd.org all returned HTTP 403 to this machine. Exact missing check: open https://data-explorer.oecd.org/ in a browser on the target network, navigate to 'Consumer price indices (CPIs,HICPs), COICOP 2018', filter to SWE and EA / Monthly / HICP / CPI / Percent per annum / Total / Not adjusted / Growth rate over 1 year, and confirm the 2025-12 and 2026-01 cells read SWE 2.1, 2.0 and EA 2.0, 1.7."
+  },
+  "notes": [
+    "1. REVISIONS ARE NORMAL. Eurostat publishes a euro-area flash estimate at the end of the reference month and a full estimate about two and a half weeks later; national figures can also be revised. A value you saw yesterday may legitimately change. Never assert an exact live value in a test.",
+    "2. CLASSIFICATION CHANGE - THIS IS WHY THIS DATAFLOW WAS CHOSEN. The older OECD dataflow DSD_PRICES@DF_PRICES_ALL (COICOP 1999) is verified to stop at 2025-12 for both SWE and EA20: a request with endPeriod=2026-01 returned only 2025-12. DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL continues past it (EA to 2026-08, SWE to 2026-07 at retrieval). A pack built on the COICOP 1999 flow would have silently returned no data for the 2026-01 rerun period.",
+    "3. THE SAME COUNTRY HAS TWO DIFFERENT 'INFLATION' NUMBERS. For Sweden in 2025-12, METHODOLOGY=HICP gives 2.1 and METHODOLOGY=N (national CPI/KPI) gives 0.2982668 - both are real OECD values from the same dataflow. The Swedish national CPI includes owner-occupier mortgage interest costs, so falling policy rates pull it down. Choosing the wrong methodology code changes the story completely. This is the single most important decoding lesson in this snapshot.",
+    "4. THE TWO OECD DATAFLOWS DISAGREE ON OVERLAPPING MONTHS. For EA/EA20 2025-12, COICOP 1999 gives 1.9 and COICOP 2018 gives 2.0; for 2025-08, 2.0 versus 2.1. Different classification basis and different vintages. Do not mix the two dataflows in one series.",
+    "5. REFERENCE-AREA CODES DIFFER BETWEEN THE TWO DATAFLOWS. COICOP 1999 uses 'EA20' (Euro area, 20 countries); COICOP 2018 uses 'EA' (Euro area). 'EA20' is not a valid reference area in the COICOP 2018 flow.",
+    "6. THE OECD IS NOT THE PRODUCER. HICP is compiled by the national statistical institutes and Eurostat. The OECD redisseminates it. Attribute accordingly and check Eurostat's terms before redistributing.",
+    "7. THE ERROR PATH IS NOT JSON. A request with an invalid dimension code returned HTTP 404 with Content-Type text/plain and the 14-byte body 'NoResultsFound'. Always check status and Content-Type before calling json.loads().",
+    "8. AN EMPTY RESULT IS A SUCCESS, NOT AN ERROR. A valid key over a period window with no data returned HTTP 200, a complete SDMX-JSON message, and \"observations\": null. Zero rows is a legitimate outcome that must be detected explicitly.",
+    "9. PUBLICATION LAG DIFFERS BY AREA. At retrieval the euro-area aggregate ran one month further than Sweden. A refresh that asks for 'the latest month' will get different last periods for different reference areas.",
+    "10. CONTEXT ONLY. This series is published inflation background. It is not a driver of the Northbridge forecast and must not be joined into the planning model.",
+    "11. OBSERVATION ORDER IS NOT TIME ORDER. The TIME_PERIOD values array in the SDMX-JSON message is unsorted (the saved snapshot begins 2025-04, 2025-09, 2025-08, 2024-05, 2024-01, ... and ends 2026-01, 2025-12). Any code that relies on the order the API happens to return is wrong. fetch_oecd.py sorts explicitly by (ref_area, period)."
+  ]
+}

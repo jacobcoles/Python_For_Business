@@ -53,3 +53,15 @@ an Excel file. If you cannot use Python in Excel, work with someone who can and 
 
 You edit the starting files in `sessions/<session>/learner/` directly. To start an exercise again, extract that
 file again from the course ZIP.
+
+## Day 2 (added after Day 1)
+
+Day 2's material is now in this repository. **Start at `DAY2_START_HERE.md`**, which lists the sessions
+and how they work.
+
+Day 2 is laid out slightly differently from the Day 1 folders above: each session has **one**
+instructions file, `sessions/<session>/<session>_instructions.md`, and there are no handout ZIPs.
+The ready-made code Day 2 uses is already in `case_pack/course_tools/`. The Day 1 folders are
+unchanged, so anything you started on Day 1 still works.
+
+Nothing from Day 1 needs to be finished first: every Day 2 session starts from its own supplied files.

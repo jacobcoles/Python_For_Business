@@ -1,0 +1,9 @@
+# Your own Python environment and your own work stay on your machine.
+.virtual-env-folder/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# Everything you produce during the exercises.
+outputs/**
+!outputs/handoffs/**

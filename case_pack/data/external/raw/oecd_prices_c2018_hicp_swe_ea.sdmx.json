@@ -1,0 +1,944 @@
+{
+  "meta": {
+    "schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/master/data-message/tools/schemas/2.0.0/sdmx-json-data-schema.json",
+    "id": "IREF015549",
+    "prepared": "2026-09-13T18:26:43Z",
+    "test": false,
+    "contentLanguages": [
+      "en",
+      "en-US"
+    ],
+    "sender": {
+      "id": "Disseminate_Final_DMZ",
+      "name": "unknown",
+      "names": {
+        "en-US": "unknown"
+      }
+    }
+  },
+  "data": {
+    "dataSets": [
+      {
+        "structure": 0,
+        "action": "Information",
+        "links": [
+          {
+            "rel": "datastructure",
+            "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=OECD.SDD.TPS:DSD_PRICES_COICOP2018(1.0)"
+          }
+        ],
+        "annotations": [
+          7,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "attributes": [],
+        "dimensionGroupAttributes": {
+          "~:~:~:~:~:~:~:~:~": [
+            8
+          ]
+        },
+        "observations": {
+          "0:0:0:0:0:0:0:0:0": [
+            2.2,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:1": [
+            3.2,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:2": [
+            2.1,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:3": [
+            2.6,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:4": [
+            2.8,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:5": [
+            2.2,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:6": [
+            2.3,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:7": [
+            2.4,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:8": [
+            2.2,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:9": [
+            2.0,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:10": [
+            1.7,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:11": [
+            2.2,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:12": [
+            2.6,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:13": [
+            2.5,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:14": [
+            2.0,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:15": [
+            2.0,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:16": [
+            2.2,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:17": [
+            3.1,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:1": [
+            2.2,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:2": [
+            3.4,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:14": [
+            3.1,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:15": [
+            2.9,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:18": [
+            2.3,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:0": [
+            2.1,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:5": [
+            2.1,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:6": [
+            2.8,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:19": [
+            2.0,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:7": [
+            1.6,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:8": [
+            2.0,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:9": [
+            1.6,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:10": [
+            1.2,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:11": [
+            1.3,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:12": [
+            1.7,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:13": [
+            1.4,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:3": [
+            2.5,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:20": [
+            2.4,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:21": [
+            2.3,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:22": [
+            2.6,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:4": [
+            3.4,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:20": [
+            2.4,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:21": [
+            2.4,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:22": [
+            2.6,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:23": [
+            1.7,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:24": [
+            2.0,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:19": [
+            2.5,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:16": [
+            2.1,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:17": [
+            2.1,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:23": [
+            2.0,
+            0,
+            0
+          ],
+          "1:0:0:0:0:0:0:0:24": [
+            2.1,
+            0,
+            0
+          ],
+          "0:0:0:0:0:0:0:0:18": [
+            1.9,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "structures": [
+      {
+        "name": "Consumer price indices (CPIs,HICPs), COICOP 2018",
+        "names": {
+          "en": "Consumer price indices (CPIs,HICPs), COICOP 2018"
+        },
+        "description": "<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:15px;font-family:\"Calibri\",sans-serif;background:white;'><span style=\"color:black;\">This dataset contains statistics on Consumer Price Indices by COICOP 2018 divisions, including national CPIs, Harmonised Indices of Consumer Prices (HICPs) and their associated weights and contributions to national year-on-year inflation. For countries for which data are not yet available according to the COICOP 2018 classification, statistics on Consumer Price Indices can be found in dataset&nbsp;</span><u><span style='font-family:\"Roboto Slab\";color:#494444;'>Consumer price indices (CPIs, HICPs), COICOP 1999</span></u><span style='font-family:\"Roboto Slab\";color:#494444;'>.&nbsp;</span><span style=\"color:black;\">The data series presented have been chosen as the most relevant prices statistics for which comparable data across countries is available.",
+        "descriptions": {
+          "en": "<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:15px;font-family:\"Calibri\",sans-serif;background:white;'><span style=\"color:black;\">This dataset contains statistics on Consumer Price Indices by COICOP 2018 divisions, including national CPIs, Harmonised Indices of Consumer Prices (HICPs) and their associated weights and contributions to national year-on-year inflation. For countries for which data are not yet available according to the COICOP 2018 classification, statistics on Consumer Price Indices can be found in dataset&nbsp;</span><u><span style='font-family:\"Roboto Slab\";color:#494444;'>Consumer price indices (CPIs, HICPs), COICOP 1999</span></u><span style='font-family:\"Roboto Slab\";color:#494444;'>.&nbsp;</span><span style=\"color:black;\">The data series presented have been chosen as the most relevant prices statistics for which comparable data across countries is available."
+        },
+        "links": [
+          {
+            "rel": "datastructure",
+            "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=OECD.SDD.TPS:DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL(1.0)"
+          }
+        ],
+        "dimensions": {
+          "dataSet": [],
+          "series": [],
+          "observation": [
+            {
+              "id": "REF_AREA",
+              "name": "Reference area",
+              "names": {
+                "en": "Reference area"
+              },
+              "keyPosition": 0,
+              "roles": [
+                "REF_AREA"
+              ],
+              "values": [
+                {
+                  "id": "EA",
+                  "order": 47,
+                  "name": "Euro area",
+                  "names": {
+                    "en": "Euro area"
+                  },
+                  "annotations": [
+                    9
+                  ]
+                },
+                {
+                  "id": "SWE",
+                  "order": 33,
+                  "name": "Sweden",
+                  "names": {
+                    "en": "Sweden"
+                  },
+                  "annotations": [
+                    10
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FREQ",
+              "name": "Frequency of observation",
+              "names": {
+                "en": "Frequency of observation"
+              },
+              "keyPosition": 1,
+              "roles": [
+                "FREQ"
+              ],
+              "values": [
+                {
+                  "id": "M",
+                  "order": 11,
+                  "name": "Monthly",
+                  "names": {
+                    "en": "Monthly"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "METHODOLOGY",
+              "name": "Methodology",
+              "names": {
+                "en": "Methodology"
+              },
+              "keyPosition": 2,
+              "roles": [
+                "METHODOLOGY"
+              ],
+              "values": [
+                {
+                  "id": "HICP",
+                  "order": 0,
+                  "name": "Eurostat harmonised index of consumer prices (HICP)",
+                  "names": {
+                    "en": "Eurostat harmonised index of consumer prices (HICP)"
+                  },
+                  "annotations": [
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MEASURE",
+              "name": "Measure",
+              "names": {
+                "en": "Measure"
+              },
+              "keyPosition": 3,
+              "roles": [
+                "MEASURE"
+              ],
+              "values": [
+                {
+                  "id": "CPI",
+                  "order": 0,
+                  "name": "Consumer price index",
+                  "names": {
+                    "en": "Consumer price index"
+                  },
+                  "annotations": [
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "UNIT_MEASURE",
+              "name": "Unit of measure",
+              "names": {
+                "en": "Unit of measure"
+              },
+              "keyPosition": 4,
+              "roles": [
+                "UNIT_MEASURE"
+              ],
+              "values": [
+                {
+                  "id": "PA",
+                  "order": 760,
+                  "name": "Percent per annum",
+                  "names": {
+                    "en": "Percent per annum"
+                  },
+                  "annotations": [
+                    12
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "EXPENDITURE",
+              "name": "Expenditure",
+              "names": {
+                "en": "Expenditure"
+              },
+              "keyPosition": 5,
+              "roles": [
+                "EXPENDITURE"
+              ],
+              "values": [
+                {
+                  "id": "_T",
+                  "order": 0,
+                  "name": "Total",
+                  "names": {
+                    "en": "Total"
+                  },
+                  "annotations": [
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ADJUSTMENT",
+              "name": "Adjustment",
+              "names": {
+                "en": "Adjustment"
+              },
+              "keyPosition": 6,
+              "roles": [
+                "ADJUSTMENT"
+              ],
+              "values": [
+                {
+                  "id": "N",
+                  "order": 6,
+                  "name": "Neither seasonally adjusted nor calendar adjusted",
+                  "names": {
+                    "en": "Neither seasonally adjusted nor calendar adjusted"
+                  },
+                  "annotations": [
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TRANSFORMATION",
+              "name": "Transformation",
+              "names": {
+                "en": "Transformation"
+              },
+              "keyPosition": 7,
+              "roles": [
+                "TRANSFORMATION"
+              ],
+              "values": [
+                {
+                  "id": "GY",
+                  "order": 47,
+                  "name": "Growth rate, over 1 year",
+                  "names": {
+                    "en": "Growth rate, over 1 year"
+                  },
+                  "annotations": [
+                    9
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TIME_PERIOD",
+              "name": "Time period",
+              "names": {
+                "en": "Time period"
+              },
+              "keyPosition": 8,
+              "roles": [
+                "TIME_PERIOD"
+              ],
+              "values": [
+                {
+                  "start": "2025-04-01T00:00:00",
+                  "end": "2025-04-30T23:59:59",
+                  "id": "2025-04",
+                  "name": "2025-04",
+                  "names": {
+                    "en-US": "2025-04"
+                  }
+                },
+                {
+                  "start": "2025-09-01T00:00:00",
+                  "end": "2025-09-30T23:59:59",
+                  "id": "2025-09",
+                  "name": "2025-09",
+                  "names": {
+                    "en-US": "2025-09"
+                  }
+                },
+                {
+                  "start": "2025-08-01T00:00:00",
+                  "end": "2025-08-31T23:59:59",
+                  "id": "2025-08",
+                  "name": "2025-08",
+                  "names": {
+                    "en-US": "2025-08"
+                  }
+                },
+                {
+                  "start": "2024-05-01T00:00:00",
+                  "end": "2024-05-31T23:59:59",
+                  "id": "2024-05",
+                  "name": "2024-05",
+                  "names": {
+                    "en-US": "2024-05"
+                  }
+                },
+                {
+                  "start": "2024-01-01T00:00:00",
+                  "end": "2024-01-31T23:59:59",
+                  "id": "2024-01",
+                  "name": "2024-01",
+                  "names": {
+                    "en-US": "2024-01"
+                  }
+                },
+                {
+                  "start": "2025-03-01T00:00:00",
+                  "end": "2025-03-31T23:59:59",
+                  "id": "2025-03",
+                  "name": "2025-03",
+                  "names": {
+                    "en-US": "2025-03"
+                  }
+                },
+                {
+                  "start": "2025-02-01T00:00:00",
+                  "end": "2025-02-28T23:59:59",
+                  "id": "2025-02",
+                  "name": "2025-02",
+                  "names": {
+                    "en-US": "2025-02"
+                  }
+                },
+                {
+                  "start": "2024-12-01T00:00:00",
+                  "end": "2024-12-31T23:59:59",
+                  "id": "2024-12",
+                  "name": "2024-12",
+                  "names": {
+                    "en-US": "2024-12"
+                  }
+                },
+                {
+                  "start": "2024-11-01T00:00:00",
+                  "end": "2024-11-30T23:59:59",
+                  "id": "2024-11",
+                  "name": "2024-11",
+                  "names": {
+                    "en-US": "2024-11"
+                  }
+                },
+                {
+                  "start": "2024-10-01T00:00:00",
+                  "end": "2024-10-31T23:59:59",
+                  "id": "2024-10",
+                  "name": "2024-10",
+                  "names": {
+                    "en-US": "2024-10"
+                  }
+                },
+                {
+                  "start": "2024-09-01T00:00:00",
+                  "end": "2024-09-30T23:59:59",
+                  "id": "2024-09",
+                  "name": "2024-09",
+                  "names": {
+                    "en-US": "2024-09"
+                  }
+                },
+                {
+                  "start": "2024-08-01T00:00:00",
+                  "end": "2024-08-31T23:59:59",
+                  "id": "2024-08",
+                  "name": "2024-08",
+                  "names": {
+                    "en-US": "2024-08"
+                  }
+                },
+                {
+                  "start": "2024-07-01T00:00:00",
+                  "end": "2024-07-31T23:59:59",
+                  "id": "2024-07",
+                  "name": "2024-07",
+                  "names": {
+                    "en-US": "2024-07"
+                  }
+                },
+                {
+                  "start": "2024-06-01T00:00:00",
+                  "end": "2024-06-30T23:59:59",
+                  "id": "2024-06",
+                  "name": "2024-06",
+                  "names": {
+                    "en-US": "2024-06"
+                  }
+                },
+                {
+                  "start": "2025-07-01T00:00:00",
+                  "end": "2025-07-31T23:59:59",
+                  "id": "2025-07",
+                  "name": "2025-07",
+                  "names": {
+                    "en-US": "2025-07"
+                  }
+                },
+                {
+                  "start": "2025-06-01T00:00:00",
+                  "end": "2025-06-30T23:59:59",
+                  "id": "2025-06",
+                  "name": "2025-06",
+                  "names": {
+                    "en-US": "2025-06"
+                  }
+                },
+                {
+                  "start": "2025-11-01T00:00:00",
+                  "end": "2025-11-30T23:59:59",
+                  "id": "2025-11",
+                  "name": "2025-11",
+                  "names": {
+                    "en-US": "2025-11"
+                  }
+                },
+                {
+                  "start": "2025-10-01T00:00:00",
+                  "end": "2025-10-31T23:59:59",
+                  "id": "2025-10",
+                  "name": "2025-10",
+                  "names": {
+                    "en-US": "2025-10"
+                  }
+                },
+                {
+                  "start": "2025-05-01T00:00:00",
+                  "end": "2025-05-31T23:59:59",
+                  "id": "2025-05",
+                  "name": "2025-05",
+                  "names": {
+                    "en-US": "2025-05"
+                  }
+                },
+                {
+                  "start": "2025-01-01T00:00:00",
+                  "end": "2025-01-31T23:59:59",
+                  "id": "2025-01",
+                  "name": "2025-01",
+                  "names": {
+                    "en-US": "2025-01"
+                  }
+                },
+                {
+                  "start": "2024-04-01T00:00:00",
+                  "end": "2024-04-30T23:59:59",
+                  "id": "2024-04",
+                  "name": "2024-04",
+                  "names": {
+                    "en-US": "2024-04"
+                  }
+                },
+                {
+                  "start": "2024-03-01T00:00:00",
+                  "end": "2024-03-31T23:59:59",
+                  "id": "2024-03",
+                  "name": "2024-03",
+                  "names": {
+                    "en-US": "2024-03"
+                  }
+                },
+                {
+                  "start": "2024-02-01T00:00:00",
+                  "end": "2024-02-29T23:59:59",
+                  "id": "2024-02",
+                  "name": "2024-02",
+                  "names": {
+                    "en-US": "2024-02"
+                  }
+                },
+                {
+                  "start": "2026-01-01T00:00:00",
+                  "end": "2026-01-31T23:59:59",
+                  "id": "2026-01",
+                  "name": "2026-01",
+                  "names": {
+                    "en-US": "2026-01"
+                  }
+                },
+                {
+                  "start": "2025-12-01T00:00:00",
+                  "end": "2025-12-31T23:59:59",
+                  "id": "2025-12",
+                  "name": "2025-12",
+                  "names": {
+                    "en-US": "2025-12"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "attributes": {
+          "dataSet": [],
+          "dimensionGroup": [],
+          "series": [],
+          "observation": [
+            {
+              "id": "DECIMALS",
+              "name": "Decimals",
+              "names": {
+                "en": "Decimals"
+              },
+              "isMandatory": false,
+              "roles": [
+                "DECIMALS"
+              ],
+              "relationship": {
+                "dimensions": [
+                  "EXPENDITURE",
+                  "ADJUSTMENT",
+                  "TRANSFORMATION",
+                  "REF_AREA",
+                  "FREQ",
+                  "METHODOLOGY",
+                  "MEASURE",
+                  "UNIT_MEASURE"
+                ]
+              },
+              "values": [
+                {
+                  "id": "2",
+                  "order": 2,
+                  "name": "Two",
+                  "names": {
+                    "en": "Two"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "OBS_STATUS",
+              "name": "Observation status",
+              "names": {
+                "en": "Observation status"
+              },
+              "isMandatory": true,
+              "roles": [
+                "OBS_STATUS"
+              ],
+              "relationship": {
+                "observation": {}
+              },
+              "values": [
+                {
+                  "id": "A",
+                  "order": 0,
+                  "name": "Normal value",
+                  "names": {
+                    "en": "Normal value"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "annotations": [
+          {
+            "type": "NonProductionDataflow",
+            "text": "true",
+            "texts": {
+              "en": "true"
+            }
+          },
+          {
+            "id": "@SDMX",
+            "title": "REF_AREA,EXPENDITURE,UNIT_MEASURE",
+            "type": "LAYOUT_ROW"
+          },
+          {
+            "id": "@SDMX",
+            "title": "TIME_PERIOD",
+            "type": "LAYOUT_COLUMN"
+          },
+          {
+            "id": "@SDMX",
+            "title": "MEASURE,METHODOLOGY,TRANSFORMATION,ADJUSTMENT",
+            "type": "LAYOUT_ROW_SECTION"
+          },
+          {
+            "id": "@SDMX",
+            "title": "OBS_STATUS=A,ADJUSTMENT=N,TRANSFORMATION=_Z,UNIT_MULT=0,REF_AREA=WXOECD",
+            "type": "NOT_DISPLAYED"
+          },
+          {
+            "id": "@SDMX",
+            "title": "FREQ=M,MEASURE=CPI,METHODOLOGY=N,UNIT_MEASURE=PA,TRANSFORMATION=GY,ADJUSTMENT=N,LASTNPERIODS=13,EXPENDITURE=_T",
+            "type": "DEFAULT"
+          },
+          {
+            "title": "COMBINED_MEASURE:MEASURE,METHODOLOGY,TRANSFORMATION;COMBINED_UNIT_MEASURE:UNIT_MEASURE,UNIT_MULT,ADJUSTMENT,BASE_PER",
+            "type": "COMBINED_CONCEPTS",
+            "text": "COMBINED_MEASURE:Measure;COMBINED_UNIT_MEASURE:Unit of measure",
+            "texts": {
+              "en": "COMBINED_MEASURE:Measure;COMBINED_UNIT_MEASURE:Unit of measure"
+            }
+          },
+          {
+            "title": "urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataStructure=OECD:MSD_REF_METADATA(1.0)",
+            "type": "METADATA"
+          },
+          {
+            "type": "HAS_METADATA"
+          },
+          {
+            "id": "@SDMX",
+            "type": "ORDER",
+            "text": "480",
+            "texts": {
+              "en": "480"
+            }
+          },
+          {
+            "id": "@SDMX",
+            "type": "ORDER",
+            "text": "340",
+            "texts": {
+              "en": "340"
+            }
+          },
+          {
+            "id": "@SDMX",
+            "type": "ORDER",
+            "text": "10",
+            "texts": {
+              "en": "10"
+            }
+          },
+          {
+            "id": "@SDMX",
+            "type": "ORDER",
+            "text": "7610",
+            "texts": {
+              "en": "7610"
+            }
+          },
+          {
+            "id": "@SDMX",
+            "type": "ORDER",
+            "text": "10",
+            "texts": {
+              "en": "10"
+            }
+          },
+          {
+            "id": "@SDMX",
+            "type": "ORDER",
+            "text": "60",
+            "texts": {
+              "en": "60"
+            }
+          }
+        ],
+        "measures": {
+          "observation": [
+            {
+              "id": "OBS_VALUE",
+              "name": "Observation value",
+              "names": {
+                "en": "Observation value"
+              },
+              "isMandatory": false,
+              "roles": [
+                "OBS_VALUE"
+              ],
+              "values": null
+            }
+          ]
+        },
+        "dataSets": [
+          0
+        ]
+      }
+    ]
+  },
+  "errors": []
+}

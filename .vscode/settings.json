@@ -1,0 +1,15 @@
+{
+    // Course settings. They make every script and notebook start in the course folder,
+    // so the paths in the instructions (for example case_pack/data/clean/...) always work.
+    "python.defaultInterpreterPath": "${workspaceFolder}/.virtual-env-folder/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.executeInFileDir": false,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    // Copy Relative Path then gives forward slashes, which is what Python wants.
+    "explorer.copyRelativePathSeparator": "/",
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.ipynb_checkpoints": true
+    }
+}

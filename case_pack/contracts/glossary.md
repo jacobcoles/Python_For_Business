@@ -99,3 +99,127 @@ cancellation are each a transaction too.
 
 **Unmapped account:** An account code with no row in the mapping table. It fails a control and
 blocks the pack. *Common mistake:* never dropped, never put in "other".
+
+---
+
+# Tool and Python words used in the course
+
+Plain meanings of the technical words in the instructions, in the order you are likely to meet them.
+
+**Course folder:** The folder you unzipped, which directly contains `case_pack`, `sessions` and `outputs`. Every path
+in the instructions starts here. *Common mistake:* opening a folder inside it, or the folder above it, in VS Code.
+
+**VS Code:** The program where you open the course folder, read instructions, edit scripts and run them.
+
+**Explorer:** The file list on the left of VS Code. Right-click a file there to copy its path or create a new file.
+
+**Path:** A folder route written as text, such as `case_pack/data/clean/account_mapping.csv`. A **relative** path starts
+at the course folder; a **full** path starts with the drive letter (`C:\...`). *Common mistake:* inside Python code,
+use `/` between folders, because `\` has a special meaning in Python text.
+
+**Terminal:** The panel at the bottom of VS Code where you paste a command and press Enter. Open it with
+**Terminal > New Terminal**.
+
+**Python environment (`.virtual-env-folder`):** The course's own copy of Python and its libraries, inside the course
+folder. *Common mistake:* running a script with a different Python, which then cannot find the libraries.
+
+**Script (`.py` file):** A saved list of Python instructions that runs from top to bottom when you click
+**Run Python File** or paste its command.
+
+**Notebook (`.ipynb` file):** A document of text sections and code **cells** that you run one at a time with
+**Shift+Enter**, seeing the result under each cell.
+
+**Kernel:** The Python process behind a notebook. It remembers what earlier cells created. Choose the course
+environment in the kernel picker at the top right. *Common mistake:* after a restart, later cells fail until you run
+the earlier ones again.
+
+**Library / pandas:** A library is ready-made code you use instead of writing everything yourself. **pandas** is the
+table library used throughout, written `pd` in code.
+
+**DataFrame:** A table in pandas, with named columns and numbered rows. `rows`, `posted` and `by_line` are DataFrames.
+
+**Column type (text or number):** Every column is stored either as text or as numbers. Text cannot be added up.
+*Common mistake:* amounts read as text look like numbers but must be converted before adding.
+
+**Filter:** Keeping only the rows that meet a rule, such as status is posted.
+
+**Join (merge):** Adding columns from a second table by matching a shared column, such as `account_code`. A **left
+join** keeps every row of the first table even when there is no match.
+
+**Group and sum:** Collecting rows that share values (for example unit and report line) and adding their amounts.
+
+**Function:** A named piece of code that takes inputs and gives back a result, such as `run_checks(inputs)`.
+*Common mistake:* defining a function does not run it; calling it does.
+
+**Setting:** A named value near the top of a script, such as `CASE = "clean"`, that you change to choose what the
+script does. Text needs quotation marks; `True`, `False` and numbers do not.
+
+**Indentation:** The spaces at the start of a line. Python uses them to know which lines belong inside a function or
+an `if`. *Common mistake:* pasting code so that it does not line up with the lines around it.
+
+**Error message (traceback):** What Python prints when it stops. Read the **last line** first: it names the problem,
+such as `KeyError` (a column name that does not exist) or `FileNotFoundError` (a wrong path or folder).
+
+**OK / PROBLEM / NOT DONE YET:** Messages printed by the course's check cells and scripts. PROBLEM says what differs and
+where to look. NOT DONE YET means a step you are responsible for has not been run.
+
+**Checkpoint:** A correct result prepared separately by the course team, used to check your own result and to start
+a later session if yours is unfinished.
+
+**CSV:** A table saved as plain text, one row per line, columns separated by commas. Excel opens it, but saving it
+from Excel can change codes such as `0400`.
+
+**API:** A way for a program to request data from another organisation's system. The **endpoint** is its address,
+**parameters** are your choices, and the **response** comes back with a **status code** (200 means OK) and a **body**.
+
+**JSON / SDMX-JSON:** Structured text made of named sections in curly brackets. SDMX-JSON is the layout statistics
+agencies such as the OECD use for it.
+
+**Cache:** A saved copy of data from an earlier request, kept so that a failed request today does not leave you
+with nothing. It keeps its original download time.
+
+**UTC:** Coordinated Universal Time, the time zone used for retrieval times such as `2026-09-13T18:33:16Z`
+(the `Z` means UTC).
+
+**Percentage points:** The difference between two percentages. From 2.1% to 2.0% is a fall of 0.1 percentage points.
+
+**Multiplier:** A factor applied to an amount: 1.05 means 5% higher, 1.00 means unchanged.
+
+**Manifest:** A small list file, sent with the exports, naming exactly which files belong to one month.
+*Common mistake:* loading the whole folder instead pulls in other months and inflates every total.
+
+**Validate (in a join):** An instruction that makes pandas stop with an error if the match is not what you promised.
+`many_to_one` means many transactions may share one mapping row, but a code must not appear twice in the mapping.
+
+**Argument:** A value you put inside a function's brackets to tell it what to work on, for example the `"2026-01"` in
+`check_posted(posted, "2026-01")`.
+
+**Return:** What a function gives back to the code that called it. `return "pass"` hands back the text `pass`.
+
+**Working directory:** The folder Python is working in when it runs. Relative paths start there. The readiness check
+prints it as `working_dir`. *Common mistake:* opening a subfolder in VS Code, so the course paths no longer match.
+
+**Stale:** A saved copy that is older than the age the policy allows (35 days in this course). It may still be shown,
+but never as current.
+
+**Seasonal naive:** A starting forecast that copies the same month one year earlier. It carries the yearly pattern and
+nothing else. *Common mistake:* it is a baseline to compare against, not a prediction.
+
+**Holdout:** Months deliberately hidden from a forecast so that its error can be measured against what actually
+happened.
+
+**Mean absolute error (MAE):** The average size of past misses, ignoring direction: errors of −10 and +20 give 15.
+*Common mistake:* it is not a percentage and not a guarantee about the future.
+
+**Variance bridge:** A table that walks from budget to actual one contribution at a time, so a reader can see what
+made up the difference.
+
+**Power Query:** The data-import and reshaping step built into Excel and Power BI. It records the steps, so the same
+import can be repeated next month.
+
+**Python object / Excel values (Python in Excel):** Two ways to show a result. A **Python object** stays available to
+later Python cells and appears as a card; **Excel values** writes the result into cells so Excel can format and chart
+it.
+
+**Microsoft 365 Copilot Chat:** The course's AI assistant, used in a browser. It writes and explains code from your
+description. *Common mistake:* running its code without reading it, or trusting a plausible result without a check.

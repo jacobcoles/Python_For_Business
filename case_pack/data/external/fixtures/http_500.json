@@ -1,0 +1,18 @@
+{
+  "_fixture": "MOCK RESPONSE - NOT A LIVE-SOURCE TEST",
+  "_what_this_is": "A constructed HTTP 500 body for D2-S03 failure drills. Serve it with status 500 and Content-Type application/vnd.sdmx.data+json from a local stub or a monkeypatched requests.get. Nothing here was returned by the OECD.",
+  "_honesty_note": "No HTTP 500 was ever observed from sdmx.oecd.org during this work. The envelope below mirrors the top-level shape of a real OECD SDMX-JSON 2.0 data message (meta / data / errors) so that a parser written against the real format still recognises it. The error codes and text are invented and are NOT an OECD error catalogue.",
+  "_expected_handling": "status_code != 200 must stop processing BEFORE json.loads(). The refresh must report 'live refresh failed' and must leave any existing good cache untouched, keeping that cache's original retrieved_at_utc.",
+  "meta": {
+    "schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/master/data-message/tools/schemas/2.0.0/sdmx-json-data-schema.json",
+    "id": "MOCK-500-FIXTURE",
+    "prepared": "2026-09-13T18:00:00Z",
+    "test": true,
+    "contentLanguages": ["en"],
+    "sender": { "id": "MOCK_FIXTURE_NOT_OECD" }
+  },
+  "data": { "dataSets": [], "structures": [] },
+  "errors": [
+    { "code": 500, "title": "Internal Server Error", "detail": "Mock server-side failure for teaching purposes. Not an OECD message." }
+  ]
+}

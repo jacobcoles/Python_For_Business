@@ -1,0 +1,20 @@
+{
+  "_fixture_label": "GENUINE OECD RESPONSE - kept verbatim. Not a live-source test when replayed; it is a recorded response.",
+  "file": "empty_result.json",
+  "sha256": "c291dd882e7b40bf6d913f6db261b9bc28e81d1434134f2d93435e1208ad60fa",
+  "bytes": 8892,
+  "url": "https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_PRICES_COICOP2018@DF_PRICES_C2018_ALL,1.0/SWE+EA.M.HICP.CPI.PA._T.N.GY?startPeriod=1950-01&endPeriod=1950-02&dimensionAtObservation=AllDimensions",
+  "http_method": "GET",
+  "request_headers_sent": {
+    "Accept": "application/vnd.sdmx.data+json; charset=utf-8; version=2"
+  },
+  "http_status": 200,
+  "response_content_type": "application/vnd.sdmx.data+json; charset=utf-8; version=2",
+  "retrieved_at_utc": "2026-09-13T18:32:33Z",
+  "how_the_zero_observation_case_was_produced": "No observations were removed by hand. The adopted series key was requested over a period window (1950-01 to 1950-02) for which the OECD holds no data. The OECD returned this complete SDMX-JSON 2.0 message with \"observations\": null of its own accord. The file is byte-identical to that response body.",
+  "serve_as": {
+    "status": 200,
+    "content_type": "application/vnd.sdmx.data+json; charset=utf-8; version=2"
+  },
+  "expected_handling": "Status and Content-Type both pass; json.loads() succeeds; data.dataSets[0].observations is null. The refresh must detect zero observations explicitly, report that outcome, and must not overwrite a good cache with an empty result."
+}
