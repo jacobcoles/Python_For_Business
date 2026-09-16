@@ -86,8 +86,10 @@ Then the instructor shares the answer and asks each person, briefly, which parts
 
 ### Step 6: Pick a track (10 minutes)
 
-Each folder in `case_pack/starters/tracks/` holds a README and a **worked example**: a complete, commented script that
-solves a small version of the use case with course data. Your project adapts it.
+Each folder in `case_pack/starters/tracks/` holds four things: a **README** stating the job in one screen, a
+**worked example** (a complete, commented script that solves a small version with course data), a **Python guide**
+naming every step and prompt, and a short page on how the same job would look in Power BI and KNIME. You build in
+Python and adapt the worked example; read the last one afterwards, when you can judge it.
 
 | Folder | What you will build | Built on the session |
 |---|---|---|
